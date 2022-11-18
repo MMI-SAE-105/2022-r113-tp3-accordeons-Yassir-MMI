@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec des booléens</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon avec des booléens</h1>
+    <div class="accordeon">
+      <section>
+        <div x-data="{ open: false }">
+          <button @click="open = ! open">Toggle</button>
+       
+          <span x-show="open" x-transition>
+              Hello 👋
+          </span>
+      </div>
+        <button>bouton 1</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo repellendus, corrupti libero nobis placeat maxime obcaecati! Nihil voluptatum pariatur at sit tempora a aliquam beatae, voluptas temporibus provident reiciendis.</p>
+      </section>
+      <section>
+        <div x-data="{ open: false }">
+          <button @click="open = ! open">Toggle</button>
+       
+          <span x-show="open" x-transition>
+              Hello 👋
+          </span>
+      </div>
+        <button>bouton 2</button>
+        <p>Dolorem vero inventore repudiandae velit rerum! Quis sunt voluptas fuga at, error impedit nam illo id temporibus! Maiores doloremque, incidunt, quaerat ipsa, alias illo vel velit voluptatem suscipit earum saepe!</p>
+      </section>
+      <section>
+        <div x-data="{ open: false }">
+          <button @click="open = ! open">Toggle</button>
+       
+          <span x-show="open" x-transition>
+              Hello 👋
+          </span>
+      </div>
+        <button>bouton 3</button>
+        <p>Iusto aut ducimus sed ullam itaque illo est delectus saepe natus repellat deserunt suscipit maiores nihil ea quisquam consectetur ex totam earum at labore, soluta cum possimus cupiditate praesentium. Molestias.</p>
+      </section>
+    </div>
   </body>
 </html>

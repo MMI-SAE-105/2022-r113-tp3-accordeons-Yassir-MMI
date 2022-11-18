@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec x-collapse</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div class="accordeon">
+      <section>
+        <button>bouton 1</button>
+        <div x-data="{ expanded: false }">
+          <button @click="expanded = ! expanded">Toggle Content</button>
+       
+          <p x-show="expanded" x-collapse>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Suscipit optio aut libero. Reiciendis omnis corporis dolorum 
+            laborum ratione facilis asperiores, aspernatur quas! Quos, 
+            accusamus! Fuga laboriosam a harum explicabo delectus!
+          </p>
+      </div>
+      </section>
+      <section>
+        <button>bouton 2</button>
+        <div x-data="{ expanded: false }">
+          <button @click="expanded = ! expanded">Toggle Content</button>
+       
+          <p x-show="expanded" x-collapse>
+            Quam totam culpa dolore pariatur ea debitis omnis distinctio nulla alias. 
+            Perferendis quis est eum voluptate non tempore sit, minus enim quo cumque 
+            optio suscipit perspiciatis. Velit illum ipsa recusandae.
+          </p>
+      </div>
+      </section>
+      <section>
+        <button>bouton 3</button>
+        <div x-data="{ expanded: false }">
+          <button @click="expanded = ! expanded">Toggle Content</button>
+       
+          <p x-show="expanded" x-collapse>
+            Quia nesciunt dolorem alias. Omnis similique sequi optio ut dolor, 
+            iure amet dolores placeat explicabo autem nam aut aliquid tenetur 
+            porro pariatur eligendi. Distinctio laborum ullam consequatur numquam 
+            reprehenderit. Explicabo!
+          </p>
+      </div>
+      </section>
+    </div>
   </body>
 </html>
