@@ -4,7 +4,7 @@
     /* pour éviter les "padding" par défaut */
     text-align: center;
     margin: 0%;
-    display: inline-block;
+    display: flex;
 
 }
 
@@ -19,7 +19,7 @@
     /* pour arrondir les bords de 5px */
     width: 107px;
     overflow: hidden;
-    transition: width;
+    transition: ;
     background-color: #eee;
     list-style-type: none;
     margin: 3px;
@@ -38,7 +38,7 @@
     /* largeur de l'élément intrérieur de 317px (= déplié) */
     margin: 0%;
     text-align: center;
-    width: ;
+    width
 }
 
 #accordeon li figure figcaption {
@@ -46,8 +46,8 @@
     /* pour espacer le texte, padding de 10px */
     /* pour que les éléments soient alignés verticalement */
     /* espace entre les éléments */
-    font-size: 200px;
-    padding: 200px;
+    width: 200px;
+    padding: 10px;    
 
     
 }
@@ -58,5 +58,6 @@
     /* pour éviter les "padding" par défaut */
 
     margin: 0%;
+    padding: 0;
 
 }
