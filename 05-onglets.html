@@ -8,5 +8,25 @@
   </head>
   <body>
     <h1>Onglets</h1>
+    <ul role="tablist">
+      <li role="tab">Onglet 1</li>
+      <li role="tab">Onglet 2</li>
+      <li role="tab">Onglet 3</li>
+    </ul>
+
+    <div>
+      <div role="tabpanel" x-show="ouvert === 1">
+        <h1>Panneau 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, unde quae rerum corporis numquam consectetur culpa aperiam harum, est, fugit animi labore eius mollitia natus aliquam expedita quis adipisci alias!</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 2">
+        <h1>Panneau 2</h1>
+        <p>Fuga a similique sit, libero deleniti neque exercitationem, molestias quis eveniet minus doloribus! Debitis adipisci consequuntur illo sapiente perspiciatis voluptatum vero, quo officiis? Velit corrupti blanditiis culpa nisi beatae neque.</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 3">
+        <h1>Panneau 3</h1>
+        <p>Suscipit mollitia sed veniam quam neque impedit eveniet, perspiciatis nostrum exercitationem. Eum laborum voluptate, odio vero, obcaecati reprehenderit numquam aperiam sequi cum accusamus cumque? Nemo quis commodi voluptatum obcaecati modi.</p>
+      </div>
+    </div>
   </body>
 </html>
